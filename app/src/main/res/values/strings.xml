@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Pomodoro</string>
+    <string name="time">00</string>
+    <string name="two_points">:</string>
 </resources>
