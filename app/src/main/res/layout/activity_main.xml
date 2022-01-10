@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timePomodoroSecond"
+        app:layout_constraintTop_toBottomOf="@+id/timePomodoroSeconds"
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
@@ -30,9 +30,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/timePomodoroSecond"
-        android:layout_width="61dp"
-        android:layout_height="68dp"
+        android:id="@+id/timePomodoroSeconds"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="292dp"
@@ -45,8 +45,8 @@
 
     <TextView
         android:id="@+id/timePomodoro2"
-        android:layout_width="61dp"
-        android:layout_height="68dp"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
         android:layout_marginStart="88dp"
         android:layout_marginLeft="88dp"
         android:layout_marginTop="292dp"

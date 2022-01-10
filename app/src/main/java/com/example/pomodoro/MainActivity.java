@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,25 +22,30 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        lbl_time = findViewById(R.id.timePomodoroSecond);
+        lbl_time = findViewById(R.id.timePomodoroSeconds);
         start = findViewById(R.id.button_start);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int i;
-
-                for(i = 0; i < 60; i++){
-                    try {
-
-                        Handler handler;
-                    }catch (Exception e){
-
-                    }
-                }
+                delayProgram();
             }
         });
 
 
+    }
+    private void delayProgram(){
+        int i;
+
+        for(i = 0; i < 6; i++){
+            try {
+                Thread.sleep(1000);
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Toast.makeText(getBaseContext(), String.valueOf(i), Toast.LENGTH_SHORT).show();
+
+        }
     }
 }
